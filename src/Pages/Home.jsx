@@ -6,9 +6,11 @@ import Experiences from '../Components/Experiences'
 import Projects from '../Components/Projects'
 import Footer from '../Components/Footer'
 
+import './Home.scss'
+
 function Home() {
   return (
-    <div>
+    <div id="home">
       <Menu/>
       <Banner/>
       <About/>

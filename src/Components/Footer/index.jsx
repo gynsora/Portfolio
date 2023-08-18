@@ -1,6 +1,8 @@
+import './Footer.scss'
+
 function Footer() {
     return (
-      <div>TEST FOOTER</div>
+      <div id="footer">TEST FOOTER</div>
     );
   }
   

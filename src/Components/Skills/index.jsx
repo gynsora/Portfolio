@@ -1,6 +1,8 @@
+import './Skills.scss'
+
 function Skills() {
     return (
-      <div>TEST SKILLS</div>
+      <div id="skills">TEST SKILLS</div>
     );
   }
   

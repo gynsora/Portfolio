@@ -1,6 +1,8 @@
+import './Projects.scss'
+
 function Projects() {
     return (
-      <div>TEST PROJECTS</div>
+      <div id="projects">TEST PROJECTS</div>
     );
   }
   

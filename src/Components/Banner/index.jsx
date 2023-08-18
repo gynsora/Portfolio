@@ -1,6 +1,7 @@
+import './Banner.scss'
 function Banner() {
     return (
-      <div>TEST BANNER</div>
+      <div id="banner">TEST BANNER</div>
     );
   }
   

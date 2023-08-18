@@ -1,6 +1,7 @@
+import './About.scss'
 function About() {
     return (
-      <div>TEST ABOUT</div>
+      <div id="about">TEST ABOUT</div>
     );
   }
   

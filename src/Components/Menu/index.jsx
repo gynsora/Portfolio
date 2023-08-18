@@ -1,6 +1,8 @@
+import './Menu.scss'
+
 function Menu() {
     return (
-      <div>TEST MENU</div>
+      <div id="menu">TEST MENU</div>
     );
   }
   
