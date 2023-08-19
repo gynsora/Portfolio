@@ -2,7 +2,7 @@ import './Footer.scss'
 
 function Footer() {
     return (
-      <div id="footer">TEST FOOTER</div>
+      <footer id="footer">TEST FOOTER</footer>
     );
   }
   

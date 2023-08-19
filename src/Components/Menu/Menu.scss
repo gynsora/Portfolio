@@ -1,5 +1,107 @@
+
 $back-lightblue : lightblue ;
 
-#menu{
+/************ Navbar Css ************/
+nav{
+    position:fixed;
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: $back-lightblue ;
+    box-shadow: 0 5px 15px rgba(0,0,0,.6);
+}
+
+nav.dark{
+    background:black ;
+}
+nav img{
+    width:50px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: $back-lightblue ;
+}
+nav.dark #navbar{
+    background: black;
+}
+
+#navbar li{
+    padding: 0 20px;
+    position:relative;//necessaire pour #navbar li a:hover::after 
+}
+
+.navbar-link{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+    transition: .3s ease-in-out;
+    font-family: 'Quintessential',cursive;	
+}
+nav.dark .navbar-link{
+    color:white;
+}
+.navbar-link:hover, .active.navbar-link,nav.dark .navbar-link:hover,nav.dark .active.navbar-link{
+    color:green;
+}
+
+.navbar-link:hover::after, .active.navbar-link::after {
+    content:'';
+    width:50%;
+    height: 2px;
+    position:absolute;
+    bottom: -4px;
+    left:20px;
+    background: green;
+}
+
+#mobile{
+    display:none;
+}
+#mobile i{
+    color:black;
+    align-items: center;
+}
+nav.dark #mobile i{
+    color:white;
+}
+
+@media screen and (max-width : 990px){
+    #navbar{
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top:90px;
+        right:-410px;
+        width:400px;
+        height: 100vh;
+        padding: 40px 0 0 10px;
+        transition: .3s ease-in-out;
+    }
+    #navbar li{
+        margin-bottom: 25px;
+        display: block;
+        width:100%;
+    }
+    #navbar.active {
+        right:0px;
+    }
+    .navbar-link{
+        display:block;
+    }
+    .navbar-link:hover::after, .active.navbar-link::after {
+        width:10%;
+    }
+    #mobile{
+        display:block;
+        cursor: pointer;
+    }
+    #mobile i{
+        font-size:30px;
+    }
 }

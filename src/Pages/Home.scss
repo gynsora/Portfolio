@@ -1,4 +1,27 @@
-$back-green : green ;
-#home{
-    background-color: $back-green;
+/************ Default Css ************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    font-weight: 400;
+    overflow-x: hidden;
+    font-family: 'Centra', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+ 

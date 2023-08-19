@@ -1,7 +1,7 @@
 import './About.scss'
 function About() {
     return (
-      <div id="about">TEST ABOUT</div>
+      <section id="about">TEST ABOUT</section>
     );
   }
   

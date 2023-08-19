@@ -2,7 +2,7 @@ import './Skills.scss'
 
 function Skills() {
     return (
-      <div id="skills">TEST SKILLS</div>
+      <section id="skills">TEST SKILLS</section>
     );
   }
   

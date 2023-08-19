@@ -3,9 +3,10 @@ import Menu from '../Components/Menu'
 import About from '../Components/About'
 import Skills from '../Components/Skills'
 import Experiences from '../Components/Experiences'
-import Projects from '../Components/Projects'
+import Portfolio from '../Components/Portfolio'
 import Footer from '../Components/Footer'
 
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import './Home.scss'
 
 function Home() {
@@ -16,7 +17,7 @@ function Home() {
       <About/>
       <Skills/>
       <Experiences/>
-      <Projects/>
+      <Portfolio/>
       <Footer/>
     </div>
     
