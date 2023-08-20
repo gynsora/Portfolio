@@ -1,27 +1,22 @@
-/************ Default Css ************/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/************ HomePage Css ************/
+#home.dark{
+	--bg-black-900:#151515;
+	--bg-black-100:#222222;
+	--bg-black-50:#393939;
+	--text-black-900:#ffffff;
+	--text-black-700:#e9e9e9;
 }
 
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 75px;
+#home.blue{
+    --skin-color:#1394D4 ;
 }
 
-body {
-    font-weight: 400;
-    overflow-x: hidden;
-    font-family: 'Centra', sans-serif;
+#home.red{
+    --skin-color:#ec1839;
+}
+#home.green{
+    --skin-color:#37b182;
 }
 
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
 
  

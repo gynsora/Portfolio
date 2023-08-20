@@ -1,0 +1,48 @@
+
+
+#theme-switch{
+    background-color: rgba(0,0,0,.3);
+    width: max-content;
+    padding: .7rem 1.7rem;
+    z-index: 2;
+    position:fixed;
+    left:50%;
+    transform: translateX(-50%);
+    bottom:2rem;
+    display: flex;
+    gap: .8rem;
+    border-radius: 3rem;
+}
+
+.cercle {
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#theme-swtich-red{
+    background: #ec1839;
+}
+#theme-swtich-blue{
+    background: #1394D4 ;
+}
+#theme-swtich-green{
+    background: #37b182;
+}
+
+#moon-start{
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#moon-start i {
+    font-size:1.4rem;
+    cursor: pointer;
+    color: var(--text-black-900);
+}

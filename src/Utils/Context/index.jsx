@@ -14,3 +14,18 @@ export const ThemeProvider = ({ children }) => {
     </ThemeContext.Provider>
   )
 }
+
+export const ColorContext = createContext()
+
+export const ColorProvider = ({ children }) => {
+  const [color, setColor] = useState('blue')
+  const toggleColor = (color) => {
+    setColor(color)
+  }
+
+  return (
+    <ColorContext.Provider value={{ color, toggleColor }}>
+      {children}
+    </ColorContext.Provider>
+  )
+}

@@ -2,13 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Home from './Pages/Home';
-import { ThemeProvider } from './Utils/Context'
+import { ThemeProvider, ColorProvider } from './Utils/Context'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <Home />
+      <ColorProvider>
+        <Home />
+      </ColorProvider>
     </ThemeProvider>
     
   </React.StrictMode>
