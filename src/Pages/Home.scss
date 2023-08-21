@@ -1,22 +1,33 @@
 /************ HomePage Css ************/
-#home.dark{
+#page-home-container.dark{
 	--bg-black-900:#151515;
 	--bg-black-100:#222222;
 	--bg-black-50:#393939;
 	--text-black-900:#ffffff;
 	--text-black-700:#e9e9e9;
+	--rgba-black: rgba(255, 255, 255,.08);
 }
 
-#home.blue{
+#page-home-container.blue{
     --skin-color:#1394D4 ;
+	--light-skin-color: #00FFF7;
+	--dark-skin-color: #0c002b;
 }
 
-#home.red{
-    --skin-color:#ec1839;
+#page-home-container.red{
+    --skin-color:#FF2B2B;
+	--light-skin-color: #FF6666;
+	--dark-skin-color: #500303;
 }
-#home.green{
+#page-home-container.green{
     --skin-color:#37b182;
+	--light-skin-color: #26FC00;
+	--dark-skin-color: #082602 ;
 }
 
+.page-home-max-width{
+	max-width:1800px;
+	margin:0 auto ;
+}
 
  

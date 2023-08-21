@@ -14,10 +14,10 @@ function Home() {
   const { theme } = useContext(ThemeContext);
   const { color } = useContext(ColorContext);
   return (
-    <div id="home" className={` ${theme === 'light' ? '' :'dark'} ${color}`} >
+    <div id="page-home-container" className={` ${theme === 'light' ? '' :'dark'} ${color}`} >
       <Menu/>
-      <ThemeSwitch/>
-      <main>
+      <main className="page-home-max-width">
+        <ThemeSwitch/>
         <Banner/>
         <About/>
         <Skills/>

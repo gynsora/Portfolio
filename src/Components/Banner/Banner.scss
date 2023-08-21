@@ -1,6 +1,179 @@
-
+#home{
+    background-color:var(--bg-black-900); 
+    color:var(--text-black-900);
+}
 
 #banner{
-    background-color:var(--bg-black-900);
-    min-height:100vh ;
+    padding-top: 100px;
+    width: 100%;
+    min-height: 100vh;
+    position:relative;
+}
+
+//permet de mettre un back ground-image transparent sans affecté les texte à l'intérieur
+#banner::before{
+    content:'';
+    background-image: url('../../Assets/img/BannerBackground.jpg');
+    background-repeat: no-repeat;
+    background-size : cover ;
+    opacity: .2;
+    position:absolute;
+    inset:0;
+}
+
+.banner-landing-text{
+	width:100%;
+	text-align:center;
+	padding:5px;
+}
+.banner-landing-text h1{
+	font-family: 'Kaushan Script', cursive;
+	background-image: linear-gradient(var(--dark-skin-color),var(--light-skin-color));
+	background-clip :text;
+	color:transparent;
+	padding:5px;	
+    font-size: 80px ;	
+    margin-top: 100px;
+    line-height: 120px;
+}
+.banner-landing-text h6{
+	font-size:20px ;
+	font-weight:300;
+}
+
+.banner-download-cv{
+	position: relative;
+	top:50px;
+	left:50%;
+	background-color: var(--bg-black-100);
+	width :100%;
+	max-width:300px;
+	transform: translate(-50%,-50%);
+	color:var(--skin-color);
+	padding: 2px ;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 20px ;
+	letter-spacing: 1px;
+	text-decoration: none;
+	text-transform: uppercase;
+	box-shadow: 0 20px 50px rgba(255,255,255,.5);
+	overflow: hidden;
+    z-index:1;
+}
+
+.banner-download-cv:before{
+	content:'';
+	position: absolute;
+	top:2px;
+	left:2px;
+	bottom: 2px;
+	width:50%;
+	background-color: var(--rgba-black) ;
+	transition: all 650ms;
+}
+.banner-download-cv:hover:before{
+	width:100%;
+}
+.banner-download-cv span:nth-child(1){
+	position:absolute;
+	top:0;
+	left:0;
+	width :100%;
+	height: 2px ;
+	background : linear-gradient(to right,var(--dark-skin-color),var(--light-skin-color)) ;
+	animation : animated1 2s linear infinite;
+}
+@keyframes animated1{
+	0%{
+		transform:translateX(-100%);
+	}
+	100%{
+		transform:translateX(100%);
+	}
+}
+.banner-download-cv span:nth-child(2){
+	position:absolute;
+	top:0;
+	right:0;
+	width :2px;
+	height: 100% ;
+	background : linear-gradient(to bottom,var(--dark-skin-color),var(--light-skin-color)) ;
+	animation : animated2 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animated2{
+	0%{
+		transform:translateY(-100%);
+	}
+	100%{
+		transform:translateY(100%);
+	}
+}
+.banner-download-cv span:nth-child(3){
+	position:absolute;
+	bottom:0;
+	left:0;
+	width :100%;
+	height: 2px ;
+	background : linear-gradient(to left,var(--dark-skin-color),var(--light-skin-color)) ;
+	animation : animated3 2s linear infinite;
+}
+@keyframes animated3{
+	0%{
+		transform:translateX(100%);
+	}
+	100%{
+		transform:translateX(-100%);
+	}
+}
+.banner-download-cv span:nth-child(4){
+	position:absolute;
+	top:0;
+	left:0;
+	width :2px;
+	height: 100% ;
+	background : linear-gradient(to top,var(--dark-skin-color),var(--light-skin-color)) ;
+	animation : animated4 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes animated4{
+	0%{
+		transform:translateY(100%);
+	}
+	100%{
+		transform:translateY(-100%);
+	}
+}
+.banner-link-top-about-content{
+	background-color:rgba(12,0,43,0.5);
+	width:40px;
+	height:40px;
+	border-radius:100%;
+	margin:0 auto;
+	margin-top:60px;
+	transition: background-color 650ms;
+    position: relative;
+}
+
+.banner-link-top-about-content:hover{
+	background-color:rgba(255,255,255,0);	
+    cursor: pointer;
+}
+.banner-link-top-about-content i{
+	padding-top:8px;
+	font-size:25px;
+	color:#00FFF7 ;
+	transition: color 650ms;
+}
+
+@media screen and (max-width : 700px){
+    .banner-landing-text h1{
+        font-size: 60px ;	
+        line-height: 80px;
+    }
+    .banner-landing-text h6{
+        font-size:18px ;
+    }
+
 }

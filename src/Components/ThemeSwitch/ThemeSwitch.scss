@@ -1,8 +1,6 @@
-
-
 #theme-switch{
     background-color: rgba(0,0,0,.3);
-    width: max-content;
+    width: 200px;
     padding: .7rem 1.7rem;
     z-index: 2;
     position:fixed;
@@ -19,6 +17,10 @@
     height: 30px;
     border-radius: 20px;
     cursor: pointer;
+    opacity: .5;
+}
+.cercle:hover{
+    opacity: 1;
 }
 
 #theme-swtich-red{
@@ -45,4 +47,8 @@
     font-size:1.4rem;
     cursor: pointer;
     color: var(--text-black-900);
+}
+
+#moon-start i:hover{
+    color: var(--skin-color);
 }
