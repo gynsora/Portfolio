@@ -1,6 +1,130 @@
-$back-yellow : yellow ;
-
 #about{
-    background-color: $back-yellow ;
-    min-height:100vh ;
+    height:100vh ;
+    max-height: 1000px;
+    background: linear-gradient(-90deg, var(--dark-skin-color) 65%, var(--bg-black-900) 35%); 
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+.about-image {
+    width: 500px;
+    height: 500px;
+    background-color: var(--dark-skin-color);
+    border: 25px solid var(--bg-black-900);
+    outline: 25px solid var(--dark-skin-color);
+}
+.about-image img{
+    width: 100%;
+    opacity: .9;
+}
+.about-content{
+    max-width: 600px;
+    color: #fff;
+    text-align: right;
+}
+
+.about-content h1{ 
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: 'Quintessential',cursive;	
+}
+
+.about-content h3{ 
+    font-size: 25px;
+    font-weight: 600;
+    color:var(--skin-color);
+    -webkit-text-stroke: .1px var(--light-skin-color);
+}
+
+.about-content p{ 
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.about-social-media{
+    margin:25px 0 40px ;
+}
+
+.about-social-media a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    color: var(--skin-color);
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+    transition: .3s;
+}
+
+.about-social-media a:hover{
+    background-color: var(--skin-color) ;
+    color: #fff;
+    box-shadow: 0 0 10px var(--skin-color);
+}
+
+.about-btn{
+    padding: 12px 35px;
+    background: var(--skin-color);
+    margin-left:10px;
+    margin-bottom: 10px;
+    color: var(--dark-skin-color);
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: .3s;
+    box-shadow: 0 0 5px var(--skin-color);
+}
+
+.about-btn:hover{
+    box-shadow: none;
+    color: #fff;
+}
+
+@media screen and (max-width : 1450px){
+    #about{
+        background: var(--dark-skin-color); 
+        display: block;
+        padding: 0;
+        padding-top: 30px;
+    }
+    .about-image {
+        display: none;
+    }
+    .about-content{
+        text-align: center;
+        margin: 0 auto;
+        max-width: 80%;
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width : 800px){
+    #about{
+        display: block;
+        justify-content: flex-start;
+    }
+    .about-content{
+        max-width: 99%;
+        width: 99%;
+    }
+    .about-content h1{
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .about-links{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-btn{
+        width: 100%;
+        margin: 5px auto;
+        max-width: 300px;
+    }
 }

@@ -1,4 +1,7 @@
 /************ HomePage Css ************/
+#page-home-container{
+ background-color: var(--bg-black-900);
+}
 #page-home-container.dark{
 	--bg-black-900:#151515;
 	--bg-black-100:#222222;

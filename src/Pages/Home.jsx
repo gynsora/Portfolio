@@ -15,8 +15,9 @@ function Home() {
   const { color } = useContext(ColorContext);
   return (
     <div id="page-home-container" className={` ${theme === 'light' ? '' :'dark'} ${color}`} >
-      <Menu/>
+      
       <main className="page-home-max-width">
+        <Menu/>
         <ThemeSwitch/>
         <Banner/>
         <About/>

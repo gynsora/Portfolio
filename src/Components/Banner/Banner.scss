@@ -6,7 +6,8 @@
 #banner{
     padding-top: 100px;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
+	max-height:1000px;
     position:relative;
 }
 
@@ -163,7 +164,7 @@
 .banner-link-top-about-content i{
 	padding-top:8px;
 	font-size:25px;
-	color:#00FFF7 ;
+	color:var(--light-skin-color) ;
 	transition: color 650ms;
 }
 

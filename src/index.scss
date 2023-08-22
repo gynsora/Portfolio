@@ -18,11 +18,27 @@ html {
     scroll-padding-top: 75px;
 }
 
+
+// body::-webkit-scrollbar {
+//     width: 11px;
+// }
 body {
     font-weight: 400;
     overflow-x: hidden;
     font-family: 'Centra', sans-serif;
+
+    // scrollbar-width: thin;
+    // scrollbar-color: var(--bg-black-900);
 }
+
+// body::-webkit-scrollbar-track {
+//     background: var(--text-black-900);
+// }
+// body::-webkit-scrollbar-thumb {
+//     background-color: var(--bg-black-900) ;
+//     border-radius: 6px;
+//     border: 3px solid var(--text-black-900);
+// }
 
 li{
     list-style: none;
