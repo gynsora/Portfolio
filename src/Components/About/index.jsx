@@ -15,21 +15,23 @@ function About() {
             <TypeAnimation 
             sequence={[
               // Same substring at the start will only be typed out once, initially
-              'Développeur Front-End',
+              'Intégrateur Front-End',
               2000, // wait 1s before replacing "Mice" with "Hamsters"
-              'Programmeur  Python',
-              2000,
               'Développeur React',
               2000,
-              'Programmeur Symfony',
-              2000
+              'Programmeur Python' ,
+              2000,
+              'Développeur Symfony',
+              2000,
+              'Passionné de Jeux-vidéos',
+              2000,
             ]}
             wrapper="span"
             speed={50}
             repeat={Infinity}
             />
           </h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quod fuga, unde asperiores nisi totam voluptate similique, ducimus corporis voluptas facere! Nisi amet eligendi quam praesentium asperiores quia.</p>
+          <p>Après plusieurs années de travail dans le domaine de la manutention , j'ai décidé de me diriger vers un domaine pour lequel je me suis découvert une passion, la programmation et plus particulièrement le développement Web.</p>
           <div className="about-social-media">
             <a href="https://www.linkedin.com/in/nadjim-djamani-759b79140/" target="_blank"><i className="fa-brands fa-linkedin-in"></i></a>
             <a href="https://github.com/gynsora" target="_blank"><i class="fa-brands fa-github"></i></a>

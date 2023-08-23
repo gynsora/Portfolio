@@ -14,60 +14,58 @@
     background-color: var(--dark-skin-color);
     border: 25px solid var(--bg-black-900);
     outline: 25px solid var(--dark-skin-color);
+    img{
+        width: 100%;
+        opacity: .85;
+    }
 }
-.about-image img{
-    width: 100%;
-    opacity: .9;
-}
+
 .about-content{
     max-width: 600px;
     color: #fff;
     text-align: right;
+    h1{
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 1.2;
+        font-family: 'Quintessential',cursive;	
+    }
+    h3{ 
+        font-size: 25px;
+        font-weight: 600;
+        color:var(--skin-color);
+        -webkit-text-stroke: .1px var(--light-skin-color);
+    }
+    p{ 
+        font-size: 16px;
+        margin-top: 20px;
+    }
 }
 
-.about-content h1{ 
-    font-size: 35px;
-    font-weight: 500;
-    line-height: 1.2;
-    font-family: 'Quintessential',cursive;	
-}
-
-.about-content h3{ 
-    font-size: 25px;
-    font-weight: 600;
-    color:var(--skin-color);
-    -webkit-text-stroke: .1px var(--light-skin-color);
-}
-
-.about-content p{ 
-    font-size: 16px;
-    margin-top: 20px;
-}
 
 .about-social-media{
     margin:25px 0 40px ;
+    a{
+        display: inline-flex;
+        width: 40px;
+        height: 40px;
+        background: transparent;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        font-size: 20px;
+        color: var(--skin-color);
+        justify-content: center;
+        align-items: center;
+        margin-left: 12px;
+        transition: .3s;
+        &:hover{
+            background-color: var(--skin-color) ;
+            color: #fff;
+            box-shadow: 0 0 10px var(--skin-color);
+        }
+    }
 }
 
-.about-social-media a{
-    display: inline-flex;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    font-size: 20px;
-    color: var(--skin-color);
-    justify-content: center;
-    align-items: center;
-    margin-left: 12px;
-    transition: .3s;
-}
-
-.about-social-media a:hover{
-    background-color: var(--skin-color) ;
-    color: #fff;
-    box-shadow: 0 0 10px var(--skin-color);
-}
 
 .about-btn{
     padding: 12px 35px;
@@ -79,12 +77,12 @@
     letter-spacing: 1px;
     transition: .3s;
     box-shadow: 0 0 5px var(--skin-color);
+    &:hover{
+        box-shadow: none;
+        color: #fff;
+    }
 }
 
-.about-btn:hover{
-    box-shadow: none;
-    color: #fff;
-}
 
 @media screen and (max-width : 1450px){
     #about{
@@ -111,13 +109,14 @@
         justify-content: flex-start;
     }
     .about-content{
-        max-width: 99%;
-        width: 99%;
+        max-width: 92%;
+        width: 92%;
+        h1{
+            max-width: 80%;
+            margin: 0 auto;
+        }
     }
-    .about-content h1{
-        max-width: 80%;
-        margin: 0 auto;
-    }
+  
     .about-links{
         display: flex;
         flex-direction: column;

@@ -11,21 +11,21 @@ nav{
     background: var(--bg-black-100) ;
     box-shadow: 0 5px 15px rgba(0,0,0,.6);
     z-index:3;
+
+    img{
+        width:50px;
+    }
 }
 
-nav img{
-    width:50px;
-}
 #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: var(--bg-black-100)  ;
-}
-
-#navbar li{
-    padding: 0 20px;
-    position:relative;//necessaire pour #navbar li a:hover::after 
+    li{
+        padding: 0 20px;
+        position:relative;//necessaire pour #navbar li a:hover::after 
+    }
 }
 
 .navbar-link{
@@ -33,29 +33,27 @@ nav img{
     font-weight: 600;
     color: var(--text-black-900);
     transition: .3s ease-in-out;
-    font-family: 'Quintessential',cursive;	
-}
-
-.navbar-link:hover, .active.navbar-link{
-    color: var(--skin-color);
-}
-
-.navbar-link:hover::after, .active.navbar-link::after {
-    content:'';
-    width:50%;
-    height: 2px;
-    position:absolute;
-    bottom: -4px;
-    left:20px;
-    background: var(--skin-color);
+    font-family: 'Quintessential',cursive;
+    &.active, &:hover{
+        color: var(--skin-color);
+    }
+    &.active::after, &:hover::after{
+        content:'';
+        width:50%;
+        height: 2px;
+        position:absolute;
+        bottom: -4px;
+        left:20px;
+        background: var(--skin-color);
+    }
 }
 
 #mobile{
     display:none;
-}
-#mobile i{
-    color: var(--text-black-900) ;
+    i{
+        color: var(--text-black-900) ;
     align-items: center;
+    }
 }
 
 
@@ -72,27 +70,27 @@ nav img{
         height: 100vh;
         padding: 40px 10px 0 10px;
         transition: .3s ease-in-out;
-    }
-    #navbar li{
-        margin-bottom: 25px;
-        display: block;
-        width:100%;
-    }
-    #navbar.active {
-        right:0px;
+        li{
+            margin-bottom: 25px;
+            display: block;
+            width:100%;
+        }
+        &.active{
+            right:0px;
+        }
     }
     .navbar-link{
         display:block;
         text-align: center;
-    }
-    .navbar-link:hover::after, .active.navbar-link::after {
-        display: none;
+        &:hover::after , &.active::after {
+            display: none;
+        }
     }
     #mobile{
         display:block;
         cursor: pointer;
-    }
-    #mobile i{
-        font-size:30px;
+        i{
+            font-size:30px;
+        }
     }
 }

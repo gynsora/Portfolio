@@ -1,44 +1,31 @@
 @import '~bootstrap/scss/bootstrap';
+
+:root{
+	--bg-black-900:#f2f2fc;
+	--bg-black-100:#fdf9ff;
+	--bg-black-50:#FCF7EE;
+	--text-black-900:#302e4d;
+	--text-black-700:#504e70;
+    --rgba-black: rgba(0, 0, 0,.08);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
 }
-:root{
-	--bg-black-900:#f2f2fc;
-	--bg-black-100:#fdf9ff;
-	--bg-black-50:#e8dfec;
-	--text-black-900:#302e4d;
-	--text-black-700:#504e70;
-    --rgba-black: rgba(0, 0, 0,.08);
-}
 html {
     scroll-behavior: smooth;
     scroll-padding-top: 75px;
 }
 
-
-// body::-webkit-scrollbar {
-//     width: 11px;
-// }
 body {
     font-weight: 400;
     overflow-x: hidden;
     font-family: 'Centra', sans-serif;
-
-    // scrollbar-width: thin;
-    // scrollbar-color: var(--bg-black-900);
 }
 
-// body::-webkit-scrollbar-track {
-//     background: var(--text-black-900);
-// }
-// body::-webkit-scrollbar-thumb {
-//     background-color: var(--bg-black-900) ;
-//     border-radius: 6px;
-//     border: 3px solid var(--text-black-900);
-// }
 
 li{
     list-style: none;
@@ -46,5 +33,10 @@ li{
 
 a{
     text-decoration: none;
+}
+//taille maximum des composant de la page home
+.page-home-max-width{
+	max-width:1800px;
+	margin:0 auto ;
 }
 

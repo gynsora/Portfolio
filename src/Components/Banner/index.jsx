@@ -6,7 +6,7 @@ function Banner() {
       <section id="home">
         <div id="banner" className="banner-landing-text">
           <h1>Nadjim Djamani</h1>
-          <h6>Développeur Web fullstack junior</h6>
+          <h6>Développeur Web fullstack</h6>
           <a href="/CV développeur informatique.pdf" target="_blank"> 
             <div className="banner-download-cv">
               <span></span>

@@ -2,7 +2,7 @@ import './Footer.scss'
 
 function Footer() {
     return (
-      <footer id="footer">TEST FOOTER</footer>
+      <footer id="footer" className="page-home-max-width">TEST FOOTER</footer>
     );
   }
   
