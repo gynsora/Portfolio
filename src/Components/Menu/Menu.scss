@@ -8,25 +8,28 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
-    background: var(--bg-black-100) ;
     box-shadow: 0 5px 15px rgba(0,0,0,.6);
     z-index:3;
-
+    &.scrolled{
+        background: var(--bg-black-100) ;
+        #navbar{
+            background: var(--bg-black-100) ;
+        }
+    }
     img{
         width:50px;
     }
+      
 }
-
 #navbar{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--bg-black-100)  ;
     li{
         padding: 0 20px;
         position:relative;//necessaire pour #navbar li a:hover::after 
     }
-}
+}  
 
 .navbar-link{
     font-size: 1.2rem;
@@ -35,7 +38,7 @@ nav{
     transition: .3s ease-in-out;
     font-family: 'Quintessential',cursive;
     &.active, &:hover{
-        color: var(--skin-color);
+        color: var(--skin-color) !important;
     }
     &.active::after, &:hover::after{
         content:'';

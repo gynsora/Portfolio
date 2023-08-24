@@ -1,6 +1,121 @@
-$back-purple : purple ;
-
 #experiences{
-    background-color: $back-purple ;
-    min-height:100vh ;
+    background-color: var(--bg-black-900);
+    color: var(--text-black-700);
+    min-height: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    .education, .experiences{
+        margin-top: 30px;
+        max-width: 40%;
+    }
+    h3.title{
+        font-size: 26px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-family: 'Quintessential',cursive;
+        text-transform: uppercase;
+        padding-top: 15px;
+        span{
+            color: var(--skin-color);
+            font-family: 'Quintessential',cursive;
+        }
+    }
+}
+
+.padd-15{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+
+
+
+.timeline-box{
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+.timeline{
+	background-color: var(--bg-black-100);
+	padding: 30px 15px;
+	border: 1px solid var(--bg-black-50); 
+	border-radius: 10px;
+	width:100%;
+	position:relative;
+}
+.timeline-item{
+	position:relative;
+	padding-left: 37px;
+	padding-bottom: 50px;
+    &:last-child{
+        padding-bottom: 0;
+    }
+    &::before {
+        content:'';
+        width: 1px;
+        position: absolute;
+        height: 100%;
+        left: 7px;
+        top: 0;
+        background-color: var(--skin-color);
+    }
+}
+
+.circle-dot{
+	position:absolute;
+	left: 0;
+	top: 0;
+	height:15px;
+	width: 15px;
+	border-radius: 50%;
+	background-color: var(--skin-color);
+}
+.timeline-date {
+	font-weight: 400;
+	font-size: 14px;
+	margin-bottom: 12px;
+	color: var(--text-black-700);
+    .fa{
+        margin-right: 5px;
+    }
+}
+
+.timeline-title{
+	font-weight: 700;
+	font-size: 18px;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	color: var(--skin-color);
+    font-family: 'Quintessential',cursive;
+}
+.timeline-text{
+	line-height: 25px;
+	font-size: 16px;
+	text-align: justify;
+	color: var(--text-black-700);
+}
+
+@media(max-width:1500px){
+	#experiences{
+        .education, .experiences{
+            max-width: 50%;
+        }
+    }
+}
+@media(max-width:1000px){
+	
+	#experiences{
+        display: block;
+        .education, .experiences{
+            width: 100%;
+            max-width: 100%;
+        }
+        h3.title{
+            margin-left: 15px;
+        }
+    }
+   
 }

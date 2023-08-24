@@ -1,19 +1,40 @@
-import { useState } from "react";
+import { useState, useEffect  } from "react";
 import logo from '../../Assets/img/logoGynsora.png';
 import './Menu.scss'; 
+////gheg
+// import { useState, useEffect } from "react";
+// import { Navbar, Nav, Container } from "react-bootstrap";
+//import { HashLink } from 'react-router-hash-link';
+// import {
+//   BrowserRouter as Router
+// } from "react-router-dom";
 
 function Menu(){
-
   const [activeLink, setActiveLink] = useState('home');
+  const [scrolled, setScrolled] = useState(false);
   const [openMenu,setOpenMenu] = useState(false);
-  
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    }
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [])
+
   const onUpdateActiveLink = (value) => {
     setActiveLink(value);
   }
 
   return (
    <header>
-      <nav >
+      <nav className={scrolled === false ? '' : 'scrolled'}>
         <a href="#home"><img alt="logo" src={logo} /></a>
         <div id="navbar-container">
           <ul id="navbar" className={openMenu === false ? '' : 'active'}>
@@ -29,7 +50,8 @@ function Menu(){
         </div>
       </nav>
    </header>
-    
+
+
   )
 }
 
