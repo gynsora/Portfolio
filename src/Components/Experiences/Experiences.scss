@@ -103,6 +103,9 @@
         .education, .experiences{
             max-width: 50%;
         }
+        h3.title{
+            margin-left: 15px;
+        }
     }
 }
 @media(max-width:1000px){
@@ -113,9 +116,7 @@
             width: 100%;
             max-width: 100%;
         }
-        h3.title{
-            margin-left: 15px;
-        }
+        
     }
    
 }

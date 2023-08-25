@@ -1,93 +1,55 @@
+import { FormationsListData , ExperiencesListData} from '../../Data/ExperiencesData'
 import './Experiences.scss'
 
 function Experiences() {
+    const FormationsList = FormationsListData ;
+    const ExperiencesList = ExperiencesListData ;
     return (
       <section id="experiences">
-      <div class="education">
-          <h3 class="title"><span>For</span>mations</h3>
-          <div class="row">
-              <div class="timeline-box padd-15">
-                  <div class="timeline shadow-dark">
-
-                      <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2021 - 2022
-                          </h3>
-                          <h4 class="timeline-title">Technicien de maintenance industriel</h4>
-                          <p class="timeline-text">
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laborum fugit qui nostrum nulla expedita. Ratione provident aut numquam voluptates facilis laudantium incidunt quia commodi error!
-                          </p>
-                      </div>
-
-                      <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2021 - 2022
-                          </h3>
-                          <h4 class="timeline-title">Technicien de maintenance industriel</h4>
-                          <p class="timeline-text">
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laborum fugit qui nostrum nulla expedita. Ratione provident aut numquam voluptates facilis laudantium incidunt quia commodi error!
-                          </p>
-                      </div>
-
-                      <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2021 - 2022
-                          </h3>
-                          <h4 class="timeline-title">Technicien de maintenance industriel</h4>
-                          <p class="timeline-text">
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laborum fugit qui nostrum nulla expedita. Ratione provident aut numquam voluptates facilis laudantium incidunt quia commodi error!
-                          </p>
-                      </div>
+        
+        <div className="education">
+            <h3 className="title"><span>For</span>mations</h3>
+            <div className="row">
+                <div className="timeline-box padd-15">
+                  <div className="timeline shadow-dark">
+                    {FormationsList.map((formation,index) => (
+                        <div className="timeline-item" key={formation.title}>
+                            <div className="circle-dot"></div>
+                            <h3 className="timeline-date">
+                                <i className="fa fa-calendar"></i> {formation.date}
+                            </h3>
+                            <h4 className="timeline-title">{formation.title}</h4>
+                            <p className="timeline-text">
+                                {formation.description}
+                            </p>
+                        </div>
+                    ))}
                   </div>
-              </div>
-          </div>
-      </div>
-      <div class="experiences">
-          <h3 class="title"><span>For</span>mations</h3>
-          <div class="row">
-              <div class="timeline-box padd-15">
-                  <div class="timeline shadow-dark">
+                </div>
+            </div>
+        </div>
 
-                      <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2021 - 2022
-                          </h3>
-                          <h4 class="timeline-title">Technicien de maintenance industriel</h4>
-                          <p class="timeline-text">
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laborum fugit qui nostrum nulla expedita. Ratione provident aut numquam voluptates facilis laudantium incidunt quia commodi error!
-                          </p>
-                      </div>
-
-                      <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2021 - 2022
-                          </h3>
-                          <h4 class="timeline-title">Technicien de maintenance industriel</h4>
-                          <p class="timeline-text">
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laborum fugit qui nostrum nulla expedita. Ratione provident aut numquam voluptates facilis laudantium incidunt quia commodi error!
-                          </p>
-                      </div>
-
-                      <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h3 class="timeline-date">
-                              <i class="fa fa-calendar"></i> 2021 - 2022
-                          </h3>
-                          <h4 class="timeline-title">Technicien de maintenance industriel</h4>
-                          <p class="timeline-text">
-                              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem laborum fugit qui nostrum nulla expedita. Ratione provident aut numquam voluptates facilis laudantium incidunt quia commodi error!
-                          </p>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-      
+        <div className="experiences">
+            <h3 className="title"><span>exp</span>ériences</h3>
+            <div className="row">
+                <div className="timeline-box padd-15">
+                    <div className="timeline shadow-dark">
+                        {ExperiencesList.map((experience,index) => (
+                            <div className="timeline-item" key={experience.title}>
+                                <div className="circle-dot"></div>
+                                <h3 className="timeline-date">
+                                    <i className="fa fa-calendar"></i> {experience.date}
+                                </h3>
+                                <h4 className="timeline-title">{experience.title}</h4>
+                                <p className="timeline-text">
+                                    {experience.description}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </div>
+        </div>
       </section>
     );
   }
