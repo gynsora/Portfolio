@@ -8,8 +8,7 @@
     gap:30px;
     padding-top: 10px;
     margin-bottom: 40px;
-    .education, .experiences{
-        margin-top: 30px;
+    .experiences{
         max-width: 40%;
     }
     h3.title{
@@ -30,9 +29,6 @@
 	padding-left: 15px;
 	padding-right: 15px;
 }
-
-
-
 
 .timeline-box{
 	flex: 0 0 100%;
@@ -100,7 +96,7 @@
 
 @media(max-width:1500px){
 	#experiences{
-        .education, .experiences{
+        .experiences{
             max-width: 50%;
         }
         h3.title{
@@ -112,7 +108,7 @@
 	
 	#experiences{
         display: block;
-        .education, .experiences{
+        .experiences{
             width: 100%;
             max-width: 100%;
         }

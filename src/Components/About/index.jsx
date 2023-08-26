@@ -15,9 +15,8 @@ function About() {
           <h3>
             <TypeAnimation 
             sequence={[
-              // Same substring at the start will only be typed out once, initially
               'Intégrateur Front-End',
-              2000, // wait 1s before replacing "Mice" with "Hamsters"
+              2000, 
               'Développeur React',
               2000,
               'Programmeur Python' ,
