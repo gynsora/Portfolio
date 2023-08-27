@@ -7,7 +7,39 @@
         text-transform: uppercase;
         font-family: 'Quintessential',cursive;
         text-align: center;
+        font-weight: 700;
     }
+}
+.portfolio-filter{
+    text-align: center;
+    padding-top: 20px;
+    button{
+        padding:10px;
+        border:none;
+        color:var(--light-skin-color); 
+        font-weight: 800;
+        background-color: var(--bg-black-100);
+        text-transform: uppercase;
+        font-family: 'Quintessential',cursive;
+        &:nth-child(1){
+            border: 2px solid var(--text-black-700);
+            border-radius: 20px 0 0 20px;
+        }
+        &:nth-child(2),&:nth-child(3){
+            border-top: 2px solid var(--text-black-700);
+            border-bottom: 2px solid var(--text-black-700);
+        }
+        &:nth-child(3){
+            border-left: 2px solid var(--text-black-700);
+        }
+        &:nth-child(4){
+            border: 2px solid var(--text-black-700);
+            border-radius: 0 20px 20px 0;
+        }
+        &:hover , &.active{
+           background: linear-gradient(to right,var(--skin-color), var(--dark-skin-color));
+        }
+    }    
 }
 
 .portfolio-projects-container{

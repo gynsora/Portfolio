@@ -10,7 +10,7 @@ function Experiences() {
                 <h3 className="title"><span>{experienceType.title.slice(0,3)}</span>{experienceType.title.slice(3)}</h3>
                 <div className="row">
                     <div className="timeline-box padd-15">
-                        <div className="timeline shadow-dark">
+                        <div className="timeline">
 
                             {experienceType.lst.map((experience,index) => (
                                 <div className="timeline-item" key={experience.title}>
