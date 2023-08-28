@@ -1,6 +1,65 @@
-$back-blue : blue ;
-
 #footer{
-    background-color: $back-blue ;
-    min-height:40vh ;
+    background-color: var(--dark-skin-color) ;
+    min-height:400px;
+    text-align: center;
+    .footer-cv{
+        padding-top: 50px;
+        a{
+            width :100%;
+            max-width:300px;
+            margin: 0 auto ;
+            display: block;
+            background-color: var(--skin-color);
+            color:var(--dark-skin-color);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 20px ;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Quintessential',cursive;
+            transition: .3s;
+            &:hover{
+                color:#fff;
+            }
+        }
+    }
+    .footer-social{
+        margin:25px 0 20px ;
+        a{
+            display: inline-flex;
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            font-size: 20px;
+            color: var(--skin-color);
+            justify-content: center;
+            align-items: center;
+            margin-left: 12px;
+            transition: .3s;
+            &:hover{
+                background-color: var(--skin-color) ;
+                color: #fff;
+                box-shadow: 0 0 10px var(--skin-color);
+            }
+        }
+        
+    }
+    .footer-mail,.footer-copyright{
+        
+        color: rgba(246, 247, 245,.5);
+        
+    }
+    .footer-mail{
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .footer-copyright{
+        margin-top: 40px;
+        font-size: 16px;
+        padding-bottom: 50px;
+    }
 }

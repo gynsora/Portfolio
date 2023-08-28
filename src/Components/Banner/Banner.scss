@@ -9,11 +9,11 @@
     height: 100vh;
 	max-height:1000px;
     position:relative;
+	border-bottom: 3px solid var(--dark-skin-color);
 	//permet de mettre un back ground-image transparent sans affecté les texte à l'intérieur
 	&::before{
 		content:'';
 		background-image: url('../../Assets/img/BannerBackground.jpg');
-		//background-image: url('../../Assets/img/cyber.png');
 		background-repeat: no-repeat;
 		background-size : cover ;
 		opacity: .1;
@@ -59,6 +59,8 @@
 	letter-spacing: 1px;
 	text-decoration: none;
 	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Quintessential',cursive;
 	overflow: hidden;
     z-index:1;
 	&:before{

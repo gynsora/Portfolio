@@ -1,12 +1,13 @@
-import {  ExperiencesListData } from '../../Data/ExperiencesData'
-import './Experiences.scss'
+import {  ExperiencesListData } from '../../Data/ExperiencesData';
+import { motion } from 'framer-motion' ;
+import './Experiences.scss';
 
 function Experiences() {
     const ExperiencesList = ExperiencesListData ;
     return (
       <section id="experiences">
         {ExperiencesList.map((experienceType,index) => (
-            <div className="experiences" key={experienceType.title}>
+            <motion.div className="experiences" key={experienceType.title} initial={{opacity:0 , scale:0}} whileInView={{opacity:1 , scale:1}} transition={{duration:.6}} >
                 <h3 className="title"><span>{experienceType.title.slice(0,3)}</span>{experienceType.title.slice(3)}</h3>
                 <div className="row">
                     <div className="timeline-box padd-15">
@@ -28,10 +29,10 @@ function Experiences() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         ))}
 
-      </section>
+      </section >
     );
   }
   
