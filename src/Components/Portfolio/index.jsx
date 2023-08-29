@@ -3,6 +3,7 @@ import { ProjectsListData } from '../../Data/ProjectsData';
 import { motion, AnimatePresence } from 'framer-motion' ;
 import './Portfolio.scss';
 
+
 function Portfolio() {
     
     const [filteredProjects,setFilteredProjects] = useState([]);
@@ -38,13 +39,12 @@ function Portfolio() {
           <button onClick={() =>{setActiveGenre("jeu")}} className={activeGenre === "jeu" ? "active" : ''} >Game</button>
           
         </div>
-
         <motion.div layout className="portfolio-projects-container" >	
           <AnimatePresence >
               {filteredProjects.map((project,index) => (
                 <motion.div   animate={{opacity:1}} initial={{opacity:0}} exit={{opacity:0}}  layout className="portfolio-card" key={project.id}>
                   <div className="portfolio-card-img">	
-                      <img src={project.image} alt={project.alt} />	
+                      <img src={process.env.PUBLIC_URL + '/img/'+project.image} alt={project.alt} />	
                   </div>	
                   <div className="portfolio-card-text">
                     <h2>{project.name}</h2>
