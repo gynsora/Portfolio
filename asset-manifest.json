@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Portoflio_DJAMANI_Nadjim/static/css/main.2738c8ef.css",
+    "main.js": "/Portoflio_DJAMANI_Nadjim/static/js/main.bb478ba4.js",
+    "static/media/nadjim.png": "/Portoflio_DJAMANI_Nadjim/static/media/nadjim.27920ec8616d7b8f4bde.png",
+    "static/media/BannerBackground.jpg": "/Portoflio_DJAMANI_Nadjim/static/media/BannerBackground.e9d07e8e402139b44864.jpg",
+    "static/media/logoGynsora.png": "/Portoflio_DJAMANI_Nadjim/static/media/logoGynsora.e078d2ae3c83509c22f6.png",
+    "index.html": "/Portoflio_DJAMANI_Nadjim/index.html",
+    "main.2738c8ef.css.map": "/Portoflio_DJAMANI_Nadjim/static/css/main.2738c8ef.css.map",
+    "main.bb478ba4.js.map": "/Portoflio_DJAMANI_Nadjim/static/js/main.bb478ba4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2738c8ef.css",
+    "static/js/main.bb478ba4.js"
+  ]
+}
