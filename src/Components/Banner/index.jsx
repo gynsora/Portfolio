@@ -7,7 +7,8 @@ function Banner() {
         <div id="banner" className="banner-landing-text">
           <h1>Nadjim Djamani</h1>
           <h6>Développeur Web</h6>
-          <a href="/CV développeur informatique.pdf" target="_blank" rel="noopener noreferrer"> 
+          
+          <a href={process.env.PUBLIC_URL + "/CV développeur informatique.pdf"}  target="_blank" rel="noopener noreferrer"> 
             <div className="banner-download-cv">
               <span></span>
               <span></span>
