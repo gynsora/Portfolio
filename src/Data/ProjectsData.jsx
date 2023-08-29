@@ -13,7 +13,7 @@ export const ProjectsListData = [
     {
         "id":"a-002",
         "name":"verre&image",
-        "image": "verreEtImage.png",
+        "image": "verreEtImage.PNG",
         "alt":"page d'accueil de verre-&-image",
         "description":"Verre&Image est un site internet permettant aux professionnels d'obtenir des plaques funéraires entièrement personnalisée en couleur.",
         "codeLink":"",
