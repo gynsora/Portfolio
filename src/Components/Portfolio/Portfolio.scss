@@ -49,7 +49,7 @@
     grid-column-gap: 20px ;
     grid-row-gap: 20px;
     padding: 20px 5% 40px;
-    max-width: 1500px;
+    max-width: 1300px;
     margin: 0 auto;
     color : #fff;
 }
@@ -83,6 +83,8 @@
             text-transform: uppercase;
             font-family: 'Quintessential',cursive;
             color: var(--skin-color);
+            font-size: 19px;
+            font-weight: 600;
         }
         p{
             font-size: 16px;
@@ -98,7 +100,7 @@
             justify-content: center;
             gap:10px;
             a{
-                margin-top: 20px;
+                margin-top: 10px;
                 font-size: 30px;
                 color:#fff ;
                 &:hover{

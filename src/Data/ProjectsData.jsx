@@ -13,12 +13,23 @@ export const ProjectsListData = [
     {
         "id":"a-002",
         "name":"verre&image",
-        "image": "verreEtImage.PNG",
+        "image": "verreEtImage.png",
         "alt":"page d'accueil de verre-&-image",
         "description":"Verre&Image est un site internet permettant aux professionnels d'obtenir des plaques funéraires entièrement personnalisée en couleur.",
         "codeLink":"",
         "demoLink":"https://verre-image.com/",
         "frameworks":"Photoshop Wordpress",
         "genre":["infographie"]
+    },
+    {
+        "id":"a-003",
+        "name":"Checkers",
+        "image": "JeuDame.jpg",
+        "alt":"page d'accueil du jeu de dame",
+        "description":"Checkers est un jeux de dame crée avec Pygame",
+        "codeLink":"https://github.com/gynsora/Pygame_Jeu_Dame",
+        "demoLink":"",
+        "frameworks":"Python Pygame",
+        "genre":["jeu"]
     }
 ] 
