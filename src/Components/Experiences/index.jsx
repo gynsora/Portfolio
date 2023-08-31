@@ -7,7 +7,7 @@ function Experiences() {
     return (
       <section id="experiences">
         {ExperiencesList.map((experienceType,index) => (
-            <motion.div className="experiences" key={experienceType.title} initial={{opacity:0 , scale:0}} whileInView={{opacity:1 , scale:1}} transition={{duration:.6}} >
+            <motion.div className="experiences" key={experienceType.title} initial={{opacity:0 , scale:0}} whileInView={{opacity:1 , scale:1}} transition={{duration:.2}} >
                 <h3 className="title"><span>{experienceType.title.slice(0,3)}</span>{experienceType.title.slice(3)}</h3>
                 <div className="row">
                     <div className="timeline-box padd-15">

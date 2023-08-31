@@ -6,8 +6,8 @@
 #banner{
     padding-top: 100px;
     width: 100%;
-    height: 100vh;
-	max-height:1000px;
+    // height: 100vh;
+	min-height:700px;
     position:relative;
 	border-bottom: 3px solid var(--dark-skin-color);
 	//permet de mettre un back ground-image transparent sans affecté les texte à l'intérieur
@@ -50,6 +50,7 @@
 	background-color: var(--bg-black-100);
 	width :100%;
 	max-width:300px;
+
 	transform: translate(-50%,-50%);
 	color:var(--skin-color);
 	padding: 2px ;
