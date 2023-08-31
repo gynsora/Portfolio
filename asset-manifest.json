@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portoflio_DJAMANI_Nadjim/static/css/main.2738c8ef.css",
-    "main.js": "/Portoflio_DJAMANI_Nadjim/static/js/main.1cc9434e.js",
-    "static/media/nadjim.png": "/Portoflio_DJAMANI_Nadjim/static/media/nadjim.27920ec8616d7b8f4bde.png",
-    "static/media/BannerBackground.jpg": "/Portoflio_DJAMANI_Nadjim/static/media/BannerBackground.e9d07e8e402139b44864.jpg",
-    "static/media/logoGynsora.png": "/Portoflio_DJAMANI_Nadjim/static/media/logoGynsora.e078d2ae3c83509c22f6.png",
-    "index.html": "/Portoflio_DJAMANI_Nadjim/index.html",
-    "main.2738c8ef.css.map": "/Portoflio_DJAMANI_Nadjim/static/css/main.2738c8ef.css.map",
-    "main.1cc9434e.js.map": "/Portoflio_DJAMANI_Nadjim/static/js/main.1cc9434e.js.map"
+    "main.css": "/Portoflio/static/css/main.6ab1ffae.css",
+    "main.js": "/Portoflio/static/js/main.40f67c10.js",
+    "static/media/nadjim.png": "/Portoflio/static/media/nadjim.27920ec8616d7b8f4bde.png",
+    "static/media/BannerBackground.jpg": "/Portoflio/static/media/BannerBackground.e9d07e8e402139b44864.jpg",
+    "static/media/logoGynsora.png": "/Portoflio/static/media/logoGynsora.e078d2ae3c83509c22f6.png",
+    "index.html": "/Portoflio/index.html",
+    "main.6ab1ffae.css.map": "/Portoflio/static/css/main.6ab1ffae.css.map",
+    "main.40f67c10.js.map": "/Portoflio/static/js/main.40f67c10.js.map"
   },
   "entrypoints": [
-    "static/css/main.2738c8ef.css",
-    "static/js/main.1cc9434e.js"
+    "static/css/main.6ab1ffae.css",
+    "static/js/main.40f67c10.js"
   ]
 }
