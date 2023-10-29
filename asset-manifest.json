@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.30c217b5.css",
-    "main.js": "/Portfolio/static/js/main.1c10f750.js",
+    "main.css": "/Portfolio/static/css/main.33a3b4d0.css",
+    "main.js": "/Portfolio/static/js/main.fd91ec3a.js",
     "static/media/nadjim.png": "/Portfolio/static/media/nadjim.27920ec8616d7b8f4bde.png",
     "static/media/BannerBackground.jpg": "/Portfolio/static/media/BannerBackground.e9d07e8e402139b44864.jpg",
     "static/media/logoGynsora.png": "/Portfolio/static/media/logoGynsora.e078d2ae3c83509c22f6.png",
     "index.html": "/Portfolio/index.html",
-    "main.30c217b5.css.map": "/Portfolio/static/css/main.30c217b5.css.map",
-    "main.1c10f750.js.map": "/Portfolio/static/js/main.1c10f750.js.map"
+    "main.33a3b4d0.css.map": "/Portfolio/static/css/main.33a3b4d0.css.map",
+    "main.fd91ec3a.js.map": "/Portfolio/static/js/main.fd91ec3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.30c217b5.css",
-    "static/js/main.1c10f750.js"
+    "static/css/main.33a3b4d0.css",
+    "static/js/main.fd91ec3a.js"
   ]
 }
