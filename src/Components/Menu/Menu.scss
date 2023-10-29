@@ -63,7 +63,7 @@ nav{
 
 @media screen and (max-width : 990px){
     nav{
-        background: var(--bg-black-100) ;
+        background: var(--bg-black-100) ;  
     }
     #navbar{
         position: fixed;
@@ -101,4 +101,12 @@ nav{
             font-size:30px;
         }
     }
+}
+
+
+@media screen and (max-width : 600px){
+    nav{
+        padding: 20px 20px;
+    }
+    
 }

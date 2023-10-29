@@ -1,21 +1,47 @@
-#theme-switch{
-    background-color: rgba(0,0,0,.3);
-    width: 200px;
-    padding: .7rem 1.7rem;
+#theme-switch-container{
     z-index: 2;
     position:fixed;
     left:50%;
     transform: translateX(-50%);
-    bottom:2rem;
+    bottom:-55px;
+    &.open{
+        bottom:1px;
+    }
+
+}
+#show-theme-switch{
+    background-color: white;
+    border: 1px solid black;
+    width:30px;
+    height:30px;
+    position:relative;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    i{
+        color: var(--skin-color);
+        margin: 6.5px;
+    
+    }
+}
+#theme-switch{
+    background-color: rgba(0,0,0,.3);
+    width: 200px;
+    padding: .7rem 1.7rem;
+    // z-index: 2;
+    // position:fixed;
+    // left:50%;
+    // transform: translateX(-50%);
+    // bottom:1px;
     display: flex;
     gap: .8rem;
-    border-radius: 3rem;
+    // border-radius: 3rem;
 }
 
 .cercle {
     width: 30px;
     height: 30px;
-    border-radius: 20px;
+    // border-radius: 20px;
     cursor: pointer;
     opacity: .5;
 }

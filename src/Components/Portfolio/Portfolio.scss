@@ -38,7 +38,8 @@
             border-radius: 0 20px 20px 0;
         }
         &:hover , &.active{
-           background: linear-gradient(to right,var(--skin-color), var(--dark-skin-color));
+        //    background: linear-gradient(to right,var(--skin-color), var(--dark-skin-color));
+           background-color: var(--dark-skin-color);
         }
     }    
 }
