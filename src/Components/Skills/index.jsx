@@ -6,7 +6,7 @@ function Skills() {
   const SkillsList = SkillsListData ;
 
   return (
-      <section id="skills">
+      <section id="skills" className="red">
         <div className="skills-header skills-head">
           <h2>Mes <span>Compétences</span></h2>
           <p>Voici un représentation des mes compétences actuelles</p>

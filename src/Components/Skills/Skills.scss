@@ -1,8 +1,13 @@
 #skills{
     min-height: 800px;
     padding: 100px 13% 50px ;
-    background-color: var(--bg-black-900);
+    // background-color: var(--bg-black-900);
+    background-color: var(--bg-black-100);
     color: var(--text-black-700);
+}
+
+.red {
+    background-color: red;
 }
 .skills-header{
     width: 100%;
@@ -123,9 +128,6 @@
         width: 90%;  
     }
 }
-
-
-
 
 
 @media screen and (max-width : 800px){

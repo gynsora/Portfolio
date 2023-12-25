@@ -22,21 +22,8 @@
         background-color: var(--bg-black-100);
         text-transform: uppercase;
         font-family: 'Quintessential',cursive;
-        &:nth-child(1){
-            border: 2px solid var(--text-black-700);
-            border-radius: 20px 0 0 20px;
-        }
-        &:nth-child(2),&:nth-child(3){
-            border-top: 2px solid var(--text-black-700);
-            border-bottom: 2px solid var(--text-black-700);
-        }
-        &:nth-child(3){
-            border-left: 2px solid var(--text-black-700);
-        }
-        &:nth-child(4){
-            border: 2px solid var(--text-black-700);
-            border-radius: 0 20px 20px 0;
-        }
+        border: 1px solid var(--text-black-700);
+        margin: 4px;
         &:hover , &.active{
         //    background: linear-gradient(to right,var(--skin-color), var(--dark-skin-color));
            background-color: var(--dark-skin-color);
@@ -60,7 +47,6 @@
     padding:0;
     overflow: hidden;	
     position: relative;
-    border-radius:5px;
     border: 1px solid var(--text-black-900);
     .portfolio-card-img{	
         transition: transform 650ms ;

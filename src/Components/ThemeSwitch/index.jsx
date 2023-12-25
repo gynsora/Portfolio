@@ -15,7 +15,7 @@ function ThemeSwitch(){
     return (
         <div id="theme-switch-container" className={stateThemeWindow === 'close' ? 'close' :'open' }>
             <div id="show-theme-switch" onClick={() => toggleStateThemeWindow()}>
-                <i class="fa-solid fa-gear"></i>
+                <i className="fa-solid fa-gear"></i>
             </div>
             <div id="theme-switch">
                     <div className="cercle" id="theme-swtich-red" onClick={() => toggleColor('red')}></div>

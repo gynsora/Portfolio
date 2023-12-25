@@ -1,6 +1,6 @@
 export const SkillsListData = [
     {
-      "name": "HTML/CSS",
+      "name": "HTML / CSS",
       "percent": "90%",
       "className" : "ninety"
     },
@@ -20,12 +20,12 @@ export const SkillsListData = [
       "className" : "sixty"
     },
     {
-      "name": "PHP",
+      "name": "JAVA / J2EE",
       "percent": "75%",
       "className" : "seventy-five"
     },
     {
-      "name": "Symfony",
+      "name": "SPRING",
       "percent": "60%",
       "className" : "sixty"
     },

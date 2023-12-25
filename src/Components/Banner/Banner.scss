@@ -13,7 +13,7 @@
 	//permet de mettre un back ground-image transparent sans affecté les texte à l'intérieur
 	&::before{
 		content:'';
-		background-image: url('../../Assets/img/BannerBackground.jpg');
+		background-image: url('../../Assets/img/Banner.jpg');
 		background-repeat: no-repeat;
 		background-size : cover ;
 		opacity: .1;

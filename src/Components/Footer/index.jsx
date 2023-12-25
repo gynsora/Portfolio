@@ -13,7 +13,7 @@ function Footer() {
             <a href="https://github.com/gynsora" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
         </div>
         <div className="footer-mail">
-          <i class="fa-regular fa-envelope"></i> djamaninadjim@gmail.com
+          <i className="fa-regular fa-envelope"></i> djamaninadjim@gmail.com
         </div>
         <div className="footer-copyright">© 2023 Nadjim DJAMANI, Tous droits réservés.</div>
       </footer>

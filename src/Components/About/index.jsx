@@ -15,13 +15,13 @@ function About() {
           <h3>
             <TypeAnimation 
             sequence={[
-              'Intégrateur Front-End',
+              'Développeur JAVA',
               2000, 
+              'Programmeur Python',
+              2000,
               'Développeur React',
               2000,
-              'Programmeur Python' ,
-              2000,
-              'Développeur Symfony',
+              'Intégrateur Front-End',
               2000,
               'Passionné de Jeux-vidéos',
               2000,
@@ -37,7 +37,7 @@ function About() {
             <a href="https://github.com/gynsora" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
           </div> 
           <div className="about-links">
-            <a href={process.env.PUBLIC_URL + "/CV développeur informatique.pdf"}  target="_blank" rel="noopener noreferrer" className="about-btn">Télécharger CV</a> 
+            <a href={process.env.PUBLIC_URL + "/CV JAVA.pdf"}  target="_blank" rel="noopener noreferrer" className="about-btn">Télécharger CV</a> 
             <HashLink to="/#footer" className="about-btn">Contactez-moi</HashLink>
             
           </div>
