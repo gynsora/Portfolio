@@ -4,7 +4,7 @@ function Footer() {
     return (
       <footer id="footer" className="page-home-max-width">
         <div className="footer-cv">
-          <a href={process.env.PUBLIC_URL + "/CV développeur informatique.pdf"}  target="_blank" rel="noopener noreferrer"> 
+          <a href={process.env.PUBLIC_URL + "/CV JAVA.pdf"}  target="_blank" rel="noopener noreferrer"> 
             Télécharger CV
           </a>
         </div>
