@@ -31,5 +31,16 @@ export const ProjectsListData = [
         "demoLink":"",
         "frameworks":"Python Pygame",
         "genre":["jeu"]
+    },
+    {
+        "id":"a-004",
+        "name":"Cascade",
+        "image": "cascade.png",
+        "alt":"page d'accueil de la partie front du projet cascade",
+        "description":"Cascade est un site d'aide à la mémoire, pour enfants autiste, créer pour l'école ECAM-EPMI",
+        "codeLink":"https://github.com/gynsora/cascade.front-end",
+        "demoLink":"https://gynsora.github.io/cascade.front-end/",
+        "frameworks":"VITEJS REACTJS TAILWINDCSS",
+        "genre":["web"]
     }
 ] 
