@@ -4,12 +4,7 @@ export const ExperiencesListData = [
         "title" : "formations",
         "lst" : [
             {
-                "date" : "2023-2024",
-                "title" : "Concepteur développeur d'applications -greta",
-                "description": "Conception de projet informatique, réalisation de site en JAVA SPRING, ReactJS, initiation à ANDROID, initiation au DEVOPS."
-            },
-            {
-                "date" : "2022",
+                "date" : "2022-2023",
                 "title" : "Développeur python cot - greta",
                 "description": "Conception et programmation orientée objet, étude des principes fondamentaux de l'IOT. Réalisation d'un jeu PYGAME dans le cadre d'un projet de fin de formation. "
             },
@@ -24,8 +19,8 @@ export const ExperiencesListData = [
         "title" : "expériences",
         "lst" : [
             {
-                "date" : "2023-2024",
-                "title" : "Stage concepteur développeur d'applications - ECAM EPMI",
+                "date" : "2023",
+                "title" : "Stage développeur d'applications - ECAM EPMI",
                 "description": "Stage effectué pour l'école d'ingénieur ECAM EPMI, nous avons réalisé un projet d'aide à la mémorisation pour enfants autistes, ce projet utilise JAVA SPRING, VITEJS, REACTJS et DOCKER."
             },
             {

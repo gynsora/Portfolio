@@ -37,7 +37,7 @@ function About() {
             <a href="https://github.com/gynsora" target="_blank" rel="noopener noreferrer"><i className="fa-brands fa-github"></i></a>
           </div> 
           <div className="about-links">
-            <a href={process.env.PUBLIC_URL + "/CV JAVA.pdf"}  target="_blank" rel="noopener noreferrer" className="about-btn">Télécharger CV</a> 
+            <a href={process.env.PUBLIC_URL + "/CV développeur informatique.pdf"}  target="_blank" rel="noopener noreferrer" className="about-btn">Télécharger CV</a> 
             <HashLink to="/#footer" className="about-btn">Contactez-moi</HashLink>
             
           </div>
